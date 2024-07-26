@@ -37,3 +37,5 @@ function name2 (fullname1){
 
 console.log(
     name2( function(){return "deshan";}))
+
+    //xxxxxxx
