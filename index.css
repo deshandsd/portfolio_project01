@@ -1,0 +1,409 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+
+
+
+
+/*Nav bar*/
+
+
+
+.upper_nav ul{
+    list-style-type: none;
+    margin: 10px 0 0 0;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 60px;
+}
+
+
+.upper_nav ul li a{
+    display:  block;
+    text-decoration: none;
+    padding: 10px 0px;
+    margin: 0 5px;
+    color: black;
+    text-align: center;
+    width: 150px;
+    font-size: 18px;
+    border-radius: 25px;
+    transition: 0.4s;
+    font-family:"lato", Arial, Helvetica, sans-serif;
+
+}
+
+
+.upper_nav ul li a:hover, .active {
+    background-color:  #00ab55;
+    color: white;
+
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    /*Main profile section*/
+
+#profile{
+    display: flex;
+    margin: 5px;
+    justify-content: center;
+    min-height: 620px;
+    align-items: center;
+    gap: 40px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.pro_pic{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-left: 20px;
+}
+
+.pro_text{
+    align-self: center;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.pro_text h1{
+    font-size: 60px;
+    font-family: "lora", serif;
+    margin: 5px 0;
+}
+
+.pro_text h2{
+    font-family: "lora", Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+.pro_text p{
+    font-family: "Courgette", cursive;
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.buttonpro{
+    height: 60px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.probtn01,.probtn02{
+    height: 44px;
+    width: 120px;
+    border-radius: 25px;
+    font-size: 15px;
+    border: 2px solid rgb(53, 53, 53);
+    transition: all 300ms ease;
+    padding: 10px;
+}
+
+.probtn01{
+    background-color: white;
+}
+
+.probtn01:hover{
+    background-color: rgb(53, 53, 53);
+    color: white;
+}
+
+.probtn02{
+    background-color: rgb(53, 53, 53);
+    color: white;
+}
+
+.probtn02:hover{
+    background-color: black;
+    border: black;
+}
+
+.socialbtn{
+    background-color: lightblue;
+    height: 50px;
+}
+
+
+
+
+
+                                 /*Main profile section End*/
+                                 
+                                 
+                                 /*About section*/
+
+.aboutsection{
+    min-height: 620px;
+    padding: 20px 0px 20px 0px;
+}
+
+.title {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.title2 h2{
+    text-align: center;
+    font-size: 40px;
+    margin: 0px;
+
+}
+
+.title p{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.title h2{
+    font-family: "lato", Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    margin: 0;
+}
+
+.expnskill{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.exp,.skill{
+    width: 280px;
+    height: 200px;
+    background-color: lightblue;
+
+}
+
+.about_info{
+    max-width: 620px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.about_info p{
+
+}
+
+.about_flex{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.about_pic img{
+    width: 320px;
+    height: 385px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 20px;
+    box-shadow: 10px 10px 10px #aaaaaa;
+
+}
+
+
+
+                                /*project section*/
+.projectsection{
+    padding: 10px 0px 0px 0px;
+    min-height: 700px;
+
+}
+
+.project_colection{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+
+.project_colection div{
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.project_colection div img{
+    max-width: 350px;
+    height: 300px; 
+}
+
+     /*Design section*/
+
+.stockimg{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 40px auto 0 auto;
+    padding: 20px 10px;
+}
+.stockimg a{
+    text-decoration: none;
+    color: black;
+}
+
+.stockimg div{
+    width: 100%;
+    max-width: 400px;
+    height: 270px;
+    border-radius: 10px;
+    background-color: #FFFBF5;
+    text-align: center;
+    font-size: 20px;
+    transition: 200ms;
+}
+
+.stockimg div:hover{
+    transform: scale(1.05);
+}
+
+.stockimg div img{
+    max-width: 400px;
+    height: 220px;
+    border-radius: 5px;
+    margin-top: 0px;
+    
+}
+
+.stockimg div p{
+    margin: 10px;
+
+    
+}
+.myproducts .title{
+    padding-top: 20px;
+}
+
+                                /*Contact section*/
+
+.contactsection{
+    height: 400px;
+    padding-top: 50px;
+}
+
+.contactdiv{
+    max-width: 500px;
+    height: 80px;
+    margin: 50px auto 0 auto;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+}
+
+.contactdiv2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.contactdiv  .linkedin{
+    width: 42px;
+    height: 42px;
+    
+}
+  
+.contactdiv .email{
+    width: 35px;
+    height: 35px;
+}
+
+.contactdiv2 p a{
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+   /*footer section*/
+
+.footer{
+    height: 140px;
+}
+
+.footer_nav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0px 0px 0px 0px;
+    height: 40px;
+
+}
+
+.footer_nav ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 10px 0px;
+    margin: 0px 5px;
+    width: 100px;
+    color: black;
+}
+
+.footer_nav ul li a:hover{
+    color: lightslategray;
+}
+
+.footer p {
+    text-align: center;
+    color: #aaaaaa;
+    margin-top: 40px;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+
+   
+    
+}
