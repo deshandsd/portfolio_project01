@@ -142,8 +142,14 @@ html {
 }
 
 .socialbtn{
-    background-color: lightblue;
+    margin-top: 6px;
     height: 50px;
+    gap: 5px;
+}
+
+
+.socialbtn img{ 
+    margin: 0 5px;
 }
 
 
