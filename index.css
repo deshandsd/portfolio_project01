@@ -196,14 +196,41 @@ html {
     gap: 15px;
     justify-content: center;
     align-items: center;
+    height: 300spx;
 }
 
 .exp,.skill{
     width: 280px;
-    height: 200px;
-    background-color: lightblue;
+    height: 280px;
+    border-radius: 10px;
+    border: black solid 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
+
+.skill p{
+    text-align: center;
+    margin: 6px 0px 0 0px;
+}
+
+.skill ul{
+    margin: 20px 0 0 0 ;
+    padding: 0;
+    list-style-type: none;
+
+}
+.skill ul li{
+    margin: 5px 0;
+}
+
+
+.exp p{
+    text-align: center;
+    margin: 6px 0 0 0;
+}
+
 
 .about_info{
     max-width: 620px;
@@ -217,6 +244,7 @@ html {
 
 .about_info p{
   height: auto;
+  margin: 15px 6px ;
 }
 
 .about_flex{
