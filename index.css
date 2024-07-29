@@ -219,6 +219,11 @@ html {
     margin: 20px 0 0 0 ;
     padding: 0;
     list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 250px;
+    text-align: center;
+    height: 100px;
 
 }
 .skill ul li{
