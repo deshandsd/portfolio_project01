@@ -20,11 +20,4 @@ function closeMenu() {
     navMenu.classList.remove("active");
 }
 
-window.onscroll = function() {myFunction()};
-
-var navbar = document.querySelector(".header");
-var sticky = navbar.offsetTop;
-
-
-
 // end navbar seciotn //

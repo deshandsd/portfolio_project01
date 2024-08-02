@@ -224,7 +224,7 @@ header{
 
 .exp,.skill{
     width: 280px;
-    height: 280px;
+    height: 200px;
     border-radius: 10px;
     border: black solid 3px;
     display: flex;
@@ -236,6 +236,7 @@ header{
 .skill p{
     text-align: center;
     margin: 6px 0px 0 0px;
+    font-weight: 650;
 }
 
 .skill ul{
@@ -257,6 +258,7 @@ header{
 .exp p{
     text-align: center;
     margin: 6px 0 0 0;
+    font-weight: 650;
 }
 
 
@@ -273,6 +275,7 @@ header{
 .about_info p{
   height: auto;
   margin: 15px 6px ;
+  font-size: 20px;
 }
 
 .about_flex{
@@ -510,7 +513,7 @@ header{
         position: fixed;
         top: 0;
         width: 100%;
-        background-color: rgba(255, 255, 255, 1);
+        background-color: rgb(255, 255, 255);
       }
       
       .sticky + .content {
@@ -520,8 +523,44 @@ header{
 
     /*Navigation ends*/
 
+
+    /*profile section */
+
     #profile{
         margin-top: 50px;
+        gap: 20px;
     }
+
+    .pro_pic{
+        width: 260px;
+        height: 260px;
+        margin: 0;
+    }
+
+    .pro_text{
+        margin: 0;
+    }
+
+    .pro_text h1{
+        font-size: 50px;
+    }
+
+    .pro_text h2{
+        font-size: 40px;
+    }
+
+
+
+
+
+    /*abouth section */
+
+    .about_info p{
+        height: auto;
+        margin: 30px 26px ;
+      }
+
+
+
 
 }
