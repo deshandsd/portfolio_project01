@@ -552,13 +552,54 @@ header{
 
 
 
-
     /*abouth section */
 
     .about_info p{
         height: auto;
-        margin: 30px 26px ;
+        margin: 35px 25px 20px 25px;
       }
+    
+    .about_pic{
+        margin-top: 20px;
+    }
+    
+    .about_pic img{
+        margin: 0;
+        height: 365px;
+        width: 300px;
+    }
+
+
+
+    
+        /* project section*/
+
+    .project_colection div{
+        max-width: 300px;
+        height: 260px;
+    }
+
+
+    
+    /*products section */
+
+
+    .myproducts .title h2{
+        font-size: 30px;
+    }
+
+    .stockimg{
+        gap: 30px;
+    }
+
+    .stockimg div img{
+        max-width: 300px;
+        height: 180px;
+    }
+
+    .stockimg div{
+        max-height: 240px;
+    }
 
 
 
