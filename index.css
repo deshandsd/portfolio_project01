@@ -1,10 +1,12 @@
-body{
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
     scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
   }
 
 
@@ -14,52 +16,73 @@ html {
 /*Nav bar*/
 
 
-
-.upper_nav ul{
-    list-style-type: none;
-    margin: 10px 0 0 0;
-    overflow: hidden;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    height: 60px;
+.navbar li{
+    list-style: none;
 }
 
-
-.upper_nav ul li a{
-    display:  block;
+.navbar a{
     text-decoration: none;
-    padding: 10px 0px;
-    margin: 0 5px;
-    color: black;
-    text-align: center;
-    width: 150px;
-    font-size: 18px;
-    border-radius: 25px;
-    transition: 0.4s;
-    font-family:"lato", Arial, Helvetica, sans-serif;
+}
+header{
+    margin-bottom: 5px;
+}
 
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+.hamburger{
+    display: none;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-item{
+    margin-left: 5rem;
+}
+
+.nav-link{
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #475569;
+}
+
+.nav-link:hover{
+    color: #482ff7;
+}
+
+.nav-logo{
+    font-family: "Courgette", cursive;
+    font-size: 2.1rem;
+    font-weight: 600;
+    color: #06D001;
 }
 
 
-.upper_nav ul li a:hover, .active {
-    background-color:  #00ab55;
-    color: white;
-
-}
-    
-    
-    
-    
-    
-    
     
     
     /*Main profile section*/
 
 #profile{
     display: flex;
-    margin: 5px;
+    margin:  5px;
     justify-content: center;
     min-height: 620px;
     align-items: center;
@@ -162,7 +185,7 @@ html {
                                  /*About section*/
 
 .aboutsection{
-    min-height: 620px;
+    min-height: 680px;
     padding: 20px 0px 20px 0px;
 }
 
@@ -441,8 +464,64 @@ html {
 
 
 @media only screen and (max-width: 768px) {
-    /* For mobile phones: */
+ 
 
-   
+    /* Navigation */
+
+    .nav-menu{
+        position: fixed;
+        left: -110%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #ffffff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.5);
+    }
+
+    .nav-menu.active{
+        left: 0;
+    }
+
+    .nav-item{
+        margin: 2.5rem;
+    }
+
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 1);
+      }
+      
+      .sticky + .content {
+        padding-top: 50px;
+      }
     
+
+    /*Navigation ends*/
+
+    #profile{
+        margin-top: 50px;
+    }
+
 }
