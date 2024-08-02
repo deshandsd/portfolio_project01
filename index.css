@@ -219,7 +219,10 @@ header{
     gap: 15px;
     justify-content: center;
     align-items: center;
-    height: 300spx;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
 }
 
 .exp,.skill{
@@ -233,13 +236,14 @@ header{
 
 }
 
-.skill p{
+.skill p, .exp p{
     text-align: center;
-    margin: 6px 0px 0 0px;
+    margin: 8px 0px 0 0px;
     font-weight: 650;
+    font-size: 20px;
 }
 
-.skill ul{
+.skill ul, .exp ul{
     margin: 20px 0 0 0 ;
     padding: 0;
     list-style-type: none;
@@ -250,20 +254,16 @@ header{
     height: 100px;
 
 }
-.skill ul li{
-    margin: 5px 0;
+.skill ul li, .exp ul li{
+    margin: 8px 0;
 }
 
 
-.exp p{
-    text-align: center;
-    margin: 6px 0 0 0;
-    font-weight: 650;
-}
+
 
 
 .about_info{
-    max-width: 620px;
+    max-width: 850px;
     font-size: 18px;
     display: flex;
     flex-direction: column;
@@ -277,7 +277,7 @@ header{
     font-weight: 200;
     height: auto;
     margin: 33px 5px 30px 5px ;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .about_flex{
@@ -468,7 +468,7 @@ header{
 
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 880px) {
  
 
     /* Navigation */
