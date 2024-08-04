@@ -145,12 +145,18 @@
             <p>Get in Touch</p>
             <h2>Contact Me</h2>
         </div>
-        <div class="contactdiv">
-            <div class="contactdiv2">
-            <img  src="images/mailicon.png" alt="mail icon" class="email">
-            <p><a href="email">dsrideshan@gmail.com</a></p>
-            <img src="images/linkedin.png" alt="linkedin pic" class="linkedin">
-            <p><a href="www.linkedin.com">LinkedIn</a></p>
+        <div class="contact-form-div">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                <input type="hidden" name="access_key" value="eef90f6d-e186-4f2b-9fdb-07eae3f33d64">
+
+                <input type="text" name="name" placeholder="Your Name" class="contact-input" required>
+                <input type="email"  name="email" placeholder="Your Email" class="contact-input" required>
+                <textarea  name="textarea" placeholder="Your Message" class="contact-input" required></textarea>
+                <button type="submit" class="subbutton">Send</button>
+            </form>
+            <div class="contact-links">
+                <a href="mailto:dsrideshan@gmail.com?subject=Contact for... &body=I'm ..."><p>dsrideshan@gmail.com</p></a>
+                                
             </div>
         </div>
     </section>
@@ -159,7 +165,7 @@
 
     <section class="footer">
 
-        <div class="footer_nav">
+        <div class="footer_nav ">
             <ul>
                 <li><a href="#about">ABOUT</a></li>
                 <li><a href="#projects">PROJECTS</a></li>
