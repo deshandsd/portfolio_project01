@@ -274,7 +274,7 @@ header{
 
 .about_info .text02{
     font-family: 'Roboto', sans-serif;
-    font-weight: 200;
+    font-weight: 100;
     height: auto;
     margin: 33px 5px 30px 5px ;
     font-size: 25px;
@@ -475,19 +475,19 @@ header{
 
     .nav-menu{
         position: fixed;
-        right: -110%;
-        top: 5rem;
+        top: -110%;
+        left: 10px;
         flex-direction: column;
         background-color: #ffffff;
         width: 100%;
         border-radius: 10px;
         text-align: center;
         transition: 0.3s;
-        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 10px 27px rgba(97, 92, 92, 0.5);
     }
 
     .nav-menu.active{
-        right: 0;
+        top: 8%;
     }
 
     .nav-item{
