@@ -31,7 +31,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 3rem;
+    padding: 1rem 1.5rem;
 }
 
 .hamburger{
@@ -64,6 +64,10 @@ header{
     color: #475569;
 }
 
+.nav-item .endone{
+    margin-right: 20px;
+}
+
 .nav-link:hover{
     color: #482ff7;
 }
@@ -73,6 +77,7 @@ header{
     font-size: 2.1rem;
     font-weight: 600;
     color: #06D001;
+    margin-left: 10px;
 }
 
 
@@ -662,16 +667,16 @@ header{
     /*contact setion*/
 
     .contact-form-div{
-        width: 450px;
+        width: auto;
     }
 
     .contact-input{
-        width: 360px;
+        width: 300px;
         height: 50px;
     }
 
     .contact-form textarea{
-        width: 360px;
+        width: 300px;
         height: 150px; 
     }
 
