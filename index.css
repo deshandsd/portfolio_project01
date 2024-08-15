@@ -13,7 +13,7 @@ html {
 
 
 
-/*Nav bar*/
+                                                       /*Nav bar*/
 
 
 .navbar li{
@@ -83,7 +83,7 @@ header{
 
     
     
-    /*Main profile section*/
+                                              /*Main profile section*/
 
 #profile{
     display: flex;
@@ -184,10 +184,10 @@ header{
 
 
 
-                                 /*Main profile section End*/
+                                       /*Main profile section End*/
                                  
                                  
-                                 /*About section*/
+                                       /*About section*/
 
 .aboutsection{
     min-height: 680px;
@@ -305,7 +305,7 @@ header{
 
 
 
-                                /*project section*/
+                                                   /*project section*/
 .projectsection{
     padding: 10px 0px 0px 0px;
     min-height: 700px;
@@ -338,7 +338,7 @@ header{
     height: 300px; 
 }
 
-     /*Design section*/
+                                                         /*Design section*/
 
 .stockimg{
     display: flex;
@@ -388,7 +388,7 @@ header{
     padding-top: 20px;
 }
 
-                                /*Contact section*/
+                                           /*Contact section*/
 
 .contactsection{
     height: auto;
@@ -487,7 +487,7 @@ header{
 }
 
 
-   /*footer section*/
+                                                     /*footer section*/
 
 .footer{
     height: 140px;
@@ -525,14 +525,41 @@ header{
 }
 
 
+                                             /*animaiton*/
 
+.animation-right{
+    opacity: 0;
+    transform: translateX(-300px);
+    transition: all 0.7s ease-in-out;
+    transition-delay: 0.4s;
+}
+
+.animation-left{
+    opacity: 0;
+    transform: translateX(300px);
+    transition: all 0.7s ease-in-out;
+    transition-delay: 0.4s;
+} 
+
+.animation{
+    opacity: 0;
+    transition: all 1s ease-in-out;
+    transition-delay: 0.4s;
+}
+
+.scroll-animation{
+    opacity: 1;
+    transform: translateX(0);
+} 
+
+                                                /*animaiton end*/
 
 
 
 @media only screen and (max-width: 880px) {
  
 
-    /* Navigation */
+                                                 /* Navigation */
 
     .nav-menu{
         position: fixed;
@@ -560,6 +587,8 @@ header{
         cursor: pointer;
     }
 
+                                           /* hamburger icon animation*/
+
     .hamburger.active .bar:nth-child(2) {
         opacity: 0;
     }
@@ -582,12 +611,14 @@ header{
       .sticky + .content {
         padding-top: 50px;
       }
+
+                                               /* hamburger icon animation end*/
     
 
-    /*Navigation ends*/
+                                                     /*Navigation ends*/
 
 
-    /*profile section */
+                                                      /*profile section */
 
     #profile{
         margin-top: 50px;
@@ -615,7 +646,7 @@ header{
 
 
 
-    /*abouth section */
+                                                        /*abouth section */
 
     .about_info .text02{
         height: auto;
@@ -635,7 +666,7 @@ header{
 
 
     
-        /* project section*/
+                                                     /* project section*/
 
     .project_colection div{
         max-width: 300px;
@@ -644,7 +675,7 @@ header{
 
 
     
-    /*products section */
+                                                 /*products section */
 
 
     .myproducts .title h2{
@@ -685,7 +716,25 @@ header{
         display: none;
     }
 
+                                                        /*animation section*/
 
-
+    .animation-right{
+        opacity: 0;
+        transition: all 0.7s ease-in-out;
+        transform: translateX(-80px);
+        transition-delay: 0.4s;
+    }
+    
+    .animation-left{
+        opacity: 0;
+        transition: all 0.7s ease-in-out;
+        transform: translateX(80px);
+        transition-delay: 0.4s;
+    } 
+    
+    .scroll-animation{
+        opacity: 1;
+        transform: translateX(0);
+   } 
 
 }
