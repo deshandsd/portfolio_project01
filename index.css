@@ -594,32 +594,9 @@ header{
     .hamburger{
         display: block;
         cursor: pointer;
-        z-index: 1001;
-        position: relative;
     }
 
 
-                                           /*testing */
-    .nav-open .nav-menu {
-    position: fixed; /* Ensure it's fixed to the top */
-    top: 0; /* Bring it into view */
-    left: 0;
-    width: 100%;
-    height: 100%; /* Make it full-screen */
-    background-color: rgba(255, 255, 255, 0.95); /* Optional: semi-transparent */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* No need for z-index; this will force it to appear above */
-}
-
-/* Ensure other elements respect this stacking */
-    .nav-open *:not(.nav-menu) {
-    pointer-events: none; /* Optional: disable interaction with other elements */
-     }
-
-                                           /*testing end */
 
                                            /* hamburger icon animation*/
 
@@ -641,7 +618,7 @@ header{
         width: 100%;
         background-color: rgb(255, 255, 255);
       }
-      
+    
       .sticky + .content {
         padding-top: 50px;
       }
