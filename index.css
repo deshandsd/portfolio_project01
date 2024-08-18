@@ -26,6 +26,10 @@ html {
 }
 header{
     margin-bottom: 5px;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    background-color: white;
 }
 
 .navbar{
@@ -570,7 +574,6 @@ header{
         position: fixed;
         top: -110%;
         left: 10px;
-        z-index: 1000;
         display: flex;
         flex-direction: column;
         background-color: #ffffff;
@@ -579,11 +582,13 @@ header{
         text-align: center;
         transition: 0.3s;
         box-shadow: 0 10px 27px rgba(97, 92, 92, 0.5);
+        z-index: 1;
     }
 
     .nav-menu.active{
         top: 8%;
         position: fixed;
+        z-index: 2;
     }
 
     .nav-item{
@@ -732,20 +737,20 @@ header{
     .animation-right{
         opacity: 0;
         transition: all 0.7s ease-in-out;
-        transform: translateX(-80px);
+        transform: translateX(-60px);
         transition-delay: 0.4s;
     }
     
     .animation-left{
         opacity: 0;
         transition: all 0.7s ease-in-out;
-        transform: translateX(80px);
+        transform: translateX(60px);
         transition-delay: 0.4s;
     } 
-    
+
     .scroll-animation{
         opacity: 1;
         transform: translateX(0);
-   } 
-
+    } 
+    
 }
