@@ -20,7 +20,6 @@ function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }
-
 // end navbar seciotn //
 
 // scroll animation //
